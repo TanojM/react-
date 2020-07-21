@@ -26,8 +26,7 @@ function MainDisplay(){
      </div>  
   	)
   }
-function handleClick(){
-  alert ('working')
+function handleClick(event){
 }
 
 	return(
