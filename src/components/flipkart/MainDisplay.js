@@ -1,11 +1,12 @@
 import React , { useState } from 'react';
-// import Description from './Description';
 import Products from './Products';
+import Description from './Description';
 
 function MainDisplay(){
  const [product ,setProduct] = useState(Products);
  
  function GetData(data){
+
   return(
      <div>
       <div className='row'>
@@ -13,22 +14,24 @@ function MainDisplay(){
       <div className='card'>
       <h2>{data.name}</h2>
       <div className='card-image'>
-       <img src={data.image} width='300' height='300' />
+       <img src={data.image} width='300' height='300'  alt={data.name}/>
       </div> 
        <div className='card-body'>
        <h4>Price: {data.Price} /-</h4>
        <h4>{data.memory}</h4>
        </div>
-       <button onClick={handleClick}>View</button>
+        <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+         View
+        </button>
       </div>
       </div>
       </div>
+
+      <Description />
      </div>  
   	)
   }
-function handleClick(event){
-}
-
+ 
 	return(
       <div>
         <h1>Latest Smartphones</h1>

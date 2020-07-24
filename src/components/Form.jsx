@@ -41,7 +41,6 @@ const [fullName , setfullname] = useState({
 export default Form;
 */
 
-/* To-Do list~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 import React , { useState } from 'react' ;
 
@@ -81,4 +80,3 @@ setInputText('');
 
 }
 export default Todo;
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/

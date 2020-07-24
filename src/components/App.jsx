@@ -179,23 +179,20 @@ export default Gettime;
 */
 
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`Final 
 import React from "react";
 import Form from '../components/Form';
 
 function Formdata(){
   return(
     <div className="container">
-    <h1>Hi</h1>
+      <Form />
     </div>
   )
 }
 
 export default Formdata;
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`*/
-
-
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 import React from 'react';
 import MainDisplay from '../components/flipkart/MainDisplay'
 
@@ -208,3 +205,4 @@ function App(){
   )
 }
 export default App;
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
