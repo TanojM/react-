@@ -134,12 +134,25 @@ ReactDom.render(
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	*/
 
 
-import React from "react";
-import ReactDom from "react-dom";
-import App from './components/App';
+// import React from "react";
+// import ReactDom from "react-dom";
+// import App from './components/App';
 
-ReactDom.render( 
-      <div>
-      <App />
-      </div>,
-	document.getElementById('root'))
+// ReactDom.render( 
+//       <div>
+//       <App />
+//       </div>,
+// 	document.getElementById('root'))
+
+
+
+// class-Component practice
+import React from 'react';
+import ReactDom from 'react-dom';
+import App from './class-components/App';
+
+ReactDom.render(
+    <React.Fragment>
+     <App />
+     </React.Fragment>,
+    document.getElementById('root'))
