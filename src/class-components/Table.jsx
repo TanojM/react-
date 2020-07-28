@@ -42,12 +42,12 @@ class Table extends Component{
       <div>      
        <h1>Movie Collections</h1><hr/>
        <h3><center>Total Movies in Database {len}</center></h3><hr/>
-        <center> <button className="btn btn-primary" style={{margin:'1rem', width:'20rem'}} 
-        data-toggle="modal" data-target="#exampleModal" onClick={this.addMovie}>
+        <center> <button className="btn btn-primary" style={{margin:'1rem', width:'20rem'}} onClick={this.addMovie}>
              Add Movies</button> </center>
        <table className="table">
        <thead>
 	    <tr>
+	      <th scope="col">Rank</th>
 	      <th scope="col">Year</th>
 	      <th scope="col">Name</th>
 	      <th scope="col">Gener</th>
@@ -55,9 +55,10 @@ class Table extends Component{
 	    </tr>
 	   </thead>
 	   <tbody>
-	    {this.state.movie.map(film => 
+	    {this.state.movie.map(film =>
 	      <tr key={film.id}>
-	       <th scope="row">{film.year}</th>
+	       <th scope="row">{film.id}</th>
+	       <th>{film.year}</th>
 	       <td>{film.name}</td>
 	       <td>{film.gener}</td>
 	       <td>

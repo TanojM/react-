@@ -8,7 +8,7 @@ const MovieData = [{
 {
 	id : 2,
 	name : 'Rush',
-	gener : 'Sports, Thriller, Romance',
+	gener : 'Sports, Thriller',
 	year : 2015
 },
 {
@@ -20,7 +20,7 @@ const MovieData = [{
 {
 	id : 4,
 	name : 'The Girl Next Door',
-	gener : 'Comedy, Romance',
+	gener : 'Comedy, Drama',
 	year : 2004
 },
 {
