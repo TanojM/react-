@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { getMovie } from '../class-components/DataTable';
+import { getMovie } from '../movieCollection/DataTable';
+import { Link } from 'react-router-dom';
 
 class Table extends Component{
    state = {
      movie : getMovie()
    }
-  
+
    deleteMovie = (film) => {
     const newMovies = this.state.movie.filter(nm => nm.id !== film.id);
     this.setState({movie : newMovies});
@@ -33,34 +34,42 @@ class Table extends Component{
       )
     }
 
+    HandleEdit = (film) =>{
+     console.log(film)   
+     this.setState({movie : [film]})   
+    }
+
   	render(){
-  	 const len = this.state.movie.length;
-  	 if(len === 0) 
+  	 const movieLen = this.state.movie.length;
+  	 if(movieLen === 0) 
   	 return <h1><center>!!!!Movie Database Is Empty</center></h1>
 
 	 return (
       <div>      
        <h1>Movie Collections</h1><hr/>
-       <h3><center>Total Movies in Database {len}</center></h3><hr/>
+       
+       <h3><center>Total Movies in Database {movieLen}</center></h3><hr/>
         <center> <button className="btn btn-primary" style={{margin:'1rem', width:'20rem'}} onClick={this.addMovie}>
              Add Movies</button> </center>
        <table className="table">
        <thead>
 	    <tr>
-	      <th scope="col">Rank</th>
 	      <th scope="col">Year</th>
 	      <th scope="col">Name</th>
 	      <th scope="col">Gener</th>
+        <th scope="col"></th>
 	      <th scope="col"></th>
 	    </tr>
 	   </thead>
 	   <tbody>
-	    {this.state.movie.map(film =>
+	    {this.state.movie.map(film => 
 	      <tr key={film.id}>
-	       <th scope="row">{film.id}</th>
 	       <th>{film.year}</th>
 	       <td>{film.name}</td>
-	       <td>{film.gener}</td>
+         <td>{film.gener}</td>
+         <td>
+         <Link to='/Edit'><button className='btn btn-primary' onClick={() => this.HandleEdit(film)} disabled>Edit</button></Link>
+         </td>
 	       <td>
 	        <button className='btn btn-primary' onClick={() => this.deleteMovie(film)}>Delete</button>
 	       </td>
@@ -68,8 +77,9 @@ class Table extends Component{
 	     )}
 	   </tbody>
 	  </table>
-      </div>
+    
+    </div>
 	 );
 	}
 }
-export default Table;
+export default  Table;

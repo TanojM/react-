@@ -28,6 +28,24 @@ const MovieData = [{
 	name : 'The Bachelors',
 	gener : 'Family, Drama',
 	year : 2017
+},
+{
+	id : 6,
+	name : 'BloodSport',
+	gener : 'Action, Drama',
+	year : 1999
+},
+{
+	id : 7,
+	name : 'Rocky 4',
+	gener : 'Sport, Drama',
+	year : 1985
+},
+{
+	id : 8,
+	name : 'The Kissing Booth',
+	gener : 'Romance, Drama',
+	year : 2018
 }]
 
 export function getMovie(){

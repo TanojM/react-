@@ -120,19 +120,17 @@ ReactDom.render(
     ,document.getElementById('root')
 	)*/
 
-/* emoji , student-datatable , keeper-app~~~~~~
+ // emoji , student-datatable , keeper-app~~~~~~
+ 
+// import React from "react";
+// import ReactDom from "react-dom";
+// import App from './components/App';
 
-import React from "react";
-import ReactDom from "react-dom";
-import App from './components/App';
-
-ReactDom.render(
-	<div>
-     <App />
-	</div>,
-	document.getElementById('root'))
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	*/
-
+// ReactDom.render(
+//   <div>
+//      <App />
+//   </div>,
+//   document.getElementById('root'));
 
 // import React from "react";
 // import ReactDom from "react-dom";
@@ -147,12 +145,60 @@ ReactDom.render(
 
 
 // class-Component practice
+// import React from 'react';
+// import ReactDom from 'react-dom';
+// import App from './class-components/App';
+
+// ReactDom.render(
+//     <React.Fragment>
+//      <App />
+//      </React.Fragment>,
+//     document.getElementById('root'))
+
+
+
+// movie database file
+// import React from 'react';
+// import ReactDom from 'react-dom';
+// import { BrowserRouter } from 'react-router-dom';
+// import App from './class-components/movieCollection/App';
+
+// ReactDom.render(
+//     <React.Fragment>
+//     <BrowserRouter>
+//      <App />
+//      </BrowserRouter>
+//      </React.Fragment>,
+//     document.getElementById('root'))
+
+
+// route component
+// import React from 'react';
+// import ReactDom from 'react-dom';
+// import { BrowserRouter } from 'react-router-dom';
+// import App from './route-component/App';
+
+// ReactDom.render(
+//     <React.Fragment>
+//      <BrowserRouter>
+//       <App />
+//      </BrowserRouter>  
+//     </React.Fragment>,
+//      document.getElementById('root')
+//   );
+
+
+
+
+// Test !!!!!!
+
 import React from 'react';
 import ReactDom from 'react-dom';
-import App from './class-components/App';
+import App from './Test/App';
 
 ReactDom.render(
-    <React.Fragment>
-     <App />
-     </React.Fragment>,
-    document.getElementById('root'))
+   <React.Fragment>
+    <App />
+   </React.Fragment>,
+   document.getElementById('root')
+  );

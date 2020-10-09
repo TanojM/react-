@@ -74,7 +74,7 @@ function Emojidisplay(){
 export default Emojidisplay;
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-/*Keeper App ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/*Keeper App ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 import React from "react";
 import Header from "../components/Keeperapp/Headingkeep";
@@ -82,6 +82,7 @@ import Footer from "../components/Keeperapp/Footerkeep";
 import Note from "../components/Keeperapp/Keeper";
 import Newnotes from "../components/Keeperapp/notes";
 
+console.log(Newnotes);
 function Reminders(data){
 console.log(data);
   return(
@@ -103,7 +104,6 @@ function Getnote(){
   );
 }
 export default Getnote;
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /*  form log-in ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -178,7 +178,7 @@ export default Gettime;
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
-
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 import React from "react";
 import Form from '../components/Form';
 
@@ -191,6 +191,7 @@ function Formdata(){
 }
 
 export default Formdata;
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 import React from 'react';
