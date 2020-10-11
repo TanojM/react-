@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Pagination from './Pagination';
+import Sidenav from './Sidenav';
 import { SearchBar } from './Search';
 import { paginate } from './Paginate';
 
@@ -49,8 +50,10 @@ class Empdata extends Component {
       <center><h1>Employee Details</h1></center>
       {List.length === 0 && <h2><center>Loading....</center></h2> }
       
-      <div className='container' >
-      
+      <div className='row'> 
+      <Sidenav />
+
+      <div className='col-lg-8 col-md-9 col-sm-9'>
       <h2>Showing {Data.length} records out of {List.length}</h2> 
       <SearchBar onChange = {this.handleSearch}/>
 
@@ -83,7 +86,9 @@ class Empdata extends Component {
          currentPage = {this.state.currentPage}
          pageSize = {this.state.pageSize}
          onPageChange = {this.handlePageChange}  />
+       </div>  
       </div>
+
        <center><p><strong>Note :</strong> The Employee data is fetched from the dummy rest api's - http://dummy.restapiexample.com </p></center>
       </div>
 	 )

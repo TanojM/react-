@@ -28,7 +28,7 @@ ul img{
 /*}*/
 
 /*Keeper App styles*/
-
+/*
 h1{
 	font-size:3rem;
 	margin:auto -16px;
@@ -36,6 +36,7 @@ h1{
 	background-color:#f5ba13;
     padding: 16px 32px;
     margin-top: -8px;
+    width: 100%;
 }
 div .Mydiv{
 	box-sizing: border-box;
@@ -64,7 +65,7 @@ footer{
 	opacity: 0.6;
 }
 
-
+*/
 /*props style*/
 /*.Datalist {
 	background-color: #f5ec45;
@@ -177,4 +178,33 @@ h4{
 	cursor: pointer;
 	background-color: black;
 	color: white;
+}
+
+/*test (employee data) styles*/
+
+h1{
+	font-size:3rem;
+	margin:auto -16px;
+	color:#fff;
+	background-color:#f5ba13;
+    padding: 16px 32px;
+    margin-top: -8px;
+}
+ 
+.Mynav{
+	background-color: #e0cdcc;
+	padding-left: 0px;
+}
+.nav-item{
+	font-size: 1rem;
+	margin:0.8rem;
+	text-align: center;
+}
+.nav-item:hover{
+	color:white;
+	background-color:black; 
+}
+.nav-item span{
+ padding-left: 2rem;
+ float: left;
 }
