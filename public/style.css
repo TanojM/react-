@@ -203,6 +203,7 @@ h1{
 .nav-item:hover{
 	color:white;
 	background-color:black; 
+	cursor: pointer;
 }
 .nav-item span{
  padding-left: 2rem;
